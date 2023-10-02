@@ -1,0 +1,15 @@
+
+.position-relative {
+  position: relative;
+}
+
+.btn-delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 11px;
+  margin:5px;
+  color: white;
+  border: none;
+  z-index: 1; 
+}

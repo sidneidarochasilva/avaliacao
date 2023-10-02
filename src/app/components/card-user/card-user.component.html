@@ -1,0 +1,19 @@
+<div class="card p-1">
+  <div class="image position-relative">
+    <img [src]="user.picture" [alt]="user.firstName" class="card-img-top" />
+  </div>
+  <div class="card-inner">
+    <div class="header">
+      <h1>{{ user.title }}</h1>
+      <div>
+        <span class="text-muted">{{ user.firstName }}</span>
+      </div>
+      <div>
+        <span class="text-muted">{{ user.lastName }}</span>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" (click)="redirectToUserDetails(user.id)">
+    Detalhes
+  </button>
+</div>

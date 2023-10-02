@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-3" *ngFor="let user of users">
+    <app-card-user [user]="user"></app-card-user>
+  </div>
+  <div
+    class="col-xs-12 col-sm-12 col-md-12 mt-5 container-notFound"
+    *ngIf="users.length <= 0"
+  >
+    <p>Nenhum resultado.......</p>
+  </div>
+</div>
+<button
+  [ngClass]="'no-hidden'"
+  *ngIf="showGoUpButton"
+  class="btn btn-dark"
+  (click)="onScrollTop()"
+>
+  ^
+</button>
+
+<button   (click)="redirect()" class="btn btn-outline-primary add-button">Adicionar</button>
