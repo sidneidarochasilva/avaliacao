@@ -1,6 +1,6 @@
 <div class="d-flex justify-content-between">
   <h2>{{ userId ? "Editar" : "Adicionar " }} Usuário</h2>
-  <button class="btn btn-danger btn-delete" (click)="deleteUser(userForm)">Excluir</button>
+  <button *ngIf="userId" class="btn btn-danger btn-delete" (click)="deleteUser(userForm)">Excluir</button>
  
 </div>
 
